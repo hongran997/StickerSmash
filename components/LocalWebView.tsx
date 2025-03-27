@@ -32,6 +32,8 @@ export default function LocalWebView({ onMessage }: Props) {
           onMessage?.(event.nativeEvent.data);
         }}
         javaScriptEnabled={true}
+        keyboardDisplayRequiresUserAction={false}
+        textInteractionEnabled={true}
       ></WebView>
     </View>
     )

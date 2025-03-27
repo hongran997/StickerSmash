@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" 
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <title>WebView</title>
   <style>
       body {
@@ -25,6 +26,13 @@
           border-radius: 5px;
           margin-top: 10px;
       }
+      .input{
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        font-size: 16px;
+      }
   </style>
 </head>
 <body>
@@ -32,6 +40,16 @@
     <h1>本地HTML 演示</h1>
     <p>这是一个嵌入到APP中的本地HTML页面</p>
     <button class="button" onclick="sendMessageToApp()">发送消息到App</button>
+    <h1>Form 演示</h1>
+    <form>
+      <input type="text" 
+        placeholder="请输入文字"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        />
+    </form>
   </div>
   <script>
     function sendMessageToApp() {
