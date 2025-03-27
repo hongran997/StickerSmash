@@ -55,6 +55,12 @@
         "projectId": "512fd2d0-e98f-4bc3-afb2-80a6d9ff5a44"
       }
     },
-    "owner": "zhaohongran"
+    "owner": "zhaohongran",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/512fd2d0-e98f-4bc3-afb2-80a6d9ff5a44"
+    }
   }
 }
