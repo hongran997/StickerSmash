@@ -1,12 +1,16 @@
 
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet, Alert } from 'react-native';
+import LocalWebView from '@/components/LocalWebView';
 
 export default function About() {
+
+  const handleMessage = (message: string) => { 
+    Alert.alert('收到消息', message);
+  }
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>
-        About
-      </Text>
+      <LocalWebView onMessage={handleMessage}/>
     </View>
   )
 }

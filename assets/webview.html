@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebView</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: #f0f0f0;
+      }
+      .container {
+          background-color: white;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          border: 1px solid green;
+      }
+      .button {
+          background-color: #007AFF;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          margin-top: 10px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>本地HTML 演示</h1>
+    <p>这是一个嵌入到APP中的本地HTML页面</p>
+    <button class="button" onclick="sendMessageToApp()">发送消息到App</button>
+  </div>
+  <script>
+    function sendMessageToApp() {
+      window.ReactNativeWebView.postMessage('Clicked Button');
+    }
+  </script>
+  
+</body>
+</html>
